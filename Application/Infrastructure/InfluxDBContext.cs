@@ -6,8 +6,9 @@ namespace Application.Infrastructure;
 public class InfluxDBContext : DefaultContext
 {
     public InfluxDBContext(
+            IStandardClientFactory factory,
             IOptions<InfluxDBOptions<InfluxDBContext>> options) 
-        : base(options.Value)
+        : base(factory, options.Value)
     {
     }
 }

@@ -17,8 +17,7 @@ public class DemoInfluxDBRepo : BaseInfluxDBRepository<InfluxDBContext>, IDemoIn
         await Context
             .WritePointAsync(
                 new DemoModel()
-                {String = "H",
-                Number = 1}.ToDataModel()
+                {String = "H", Number = 1}.ToDataModel()
                 ,"test","Inter");
 
     }

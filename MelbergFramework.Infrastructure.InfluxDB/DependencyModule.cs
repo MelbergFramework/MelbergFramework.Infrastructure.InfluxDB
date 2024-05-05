@@ -16,6 +16,10 @@ public static class InfluxDBDependencyModule
             .ValidateOnStart();
 
         services
+            .AddSingleton<IStandardClientFactory,
+                            StandardClientFactory>();
+
+        services
             .AddSingleton<TContext,TContext>()
             .AddTransient<TFrom, TTo>();
 
