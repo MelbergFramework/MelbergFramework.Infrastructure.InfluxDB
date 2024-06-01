@@ -12,7 +12,7 @@
 
   	<ItemGroup>
         <PackageReference Include="InfluxDB.Client" Version="4.14.0" />
-		<PackageReference Include="MelbergFramework.Core" Version="8.0.7" />
+		<PackageReference Include="MelbergFramework.Core" Version="8.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
